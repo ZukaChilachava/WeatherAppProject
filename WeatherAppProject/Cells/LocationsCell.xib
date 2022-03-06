@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="KGk-i7-Jjw" customClass="LocationsCell" customModule="WeatherAppProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofr-Og-9iJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tbilisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRM-4o-PFy">
+                                <rect key="frame" x="5" y="38" width="51" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgK-Kh-A2w">
+                                <rect key="frame" x="5" y="64" width="22" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ORm-hN-hsL">
+                                <rect key="frame" x="224" y="1.5" width="96" height="105.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d96-p7-Lyt">
+                                <rect key="frame" x="187" y="42" width="37" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ORm-hN-hsL" secondAttribute="trailing" id="9Xn-Sh-Fwh"/>
+                            <constraint firstItem="dgK-Kh-A2w" firstAttribute="leading" secondItem="Ofr-Og-9iJ" secondAttribute="leading" constant="5" id="9aj-Q6-Lzg"/>
+                            <constraint firstAttribute="bottom" secondItem="ORm-hN-hsL" secondAttribute="bottom" id="FNf-hC-SDx"/>
+                            <constraint firstItem="CRM-4o-PFy" firstAttribute="leading" secondItem="Ofr-Og-9iJ" secondAttribute="leading" constant="5" id="MyV-7R-gJs"/>
+                            <constraint firstItem="ORm-hN-hsL" firstAttribute="leading" secondItem="d96-p7-Lyt" secondAttribute="trailing" id="POB-iZ-3D6"/>
+                            <constraint firstItem="d96-p7-Lyt" firstAttribute="centerY" secondItem="Ofr-Og-9iJ" secondAttribute="centerY" id="a8Q-Ef-M3o"/>
+                            <constraint firstItem="CRM-4o-PFy" firstAttribute="centerY" secondItem="Ofr-Og-9iJ" secondAttribute="centerY" constant="-5" id="jGm-W2-YZc"/>
+                            <constraint firstItem="ORm-hN-hsL" firstAttribute="top" secondItem="Ofr-Og-9iJ" secondAttribute="top" id="mUV-KU-nTJ"/>
+                            <constraint firstItem="ORm-hN-hsL" firstAttribute="width" secondItem="Ofr-Og-9iJ" secondAttribute="width" multiplier="0.3" id="ryq-Tc-qT8"/>
+                            <constraint firstItem="dgK-Kh-A2w" firstAttribute="top" secondItem="CRM-4o-PFy" secondAttribute="bottom" constant="2" id="xsr-ah-NZv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Ofr-Og-9iJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AXb-mh-kXz"/>
+                    <constraint firstAttribute="bottom" secondItem="Ofr-Og-9iJ" secondAttribute="bottom" constant="10" id="Q4y-hD-OjQ"/>
+                    <constraint firstItem="Ofr-Og-9iJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Thr-4s-Jll"/>
+                    <constraint firstAttribute="trailing" secondItem="Ofr-Og-9iJ" secondAttribute="trailing" id="l4Y-Gd-HSJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cityLabel" destination="CRM-4o-PFy" id="7rM-ad-VFL"/>
+                <outlet property="countryLabel" destination="dgK-Kh-A2w" id="MoO-Pn-9GH"/>
+                <outlet property="forecastItem" destination="Ofr-Og-9iJ" id="qT2-c8-x3A"/>
+                <outlet property="temperatureLabel" destination="d96-p7-Lyt" id="Rjk-ji-fd2"/>
+                <outlet property="weatherImage" destination="ORm-hN-hsL" id="t4H-QU-fcH"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="151.33928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cloud.fill" catalog="system" width="128" height="88"/>
+    </resources>
+</document>

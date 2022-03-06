@@ -1,0 +1,22 @@
+PODS:
+  - DynamicBlurView (5.0.3)
+  - SDWebImage (5.12.3):
+    - SDWebImage/Core (= 5.12.3)
+  - SDWebImage/Core (5.12.3)
+
+DEPENDENCIES:
+  - DynamicBlurView
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - DynamicBlurView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  DynamicBlurView: b57e2f6aa33f85b2bcca272265162a3c7c5cc499
+  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
+
+PODFILE CHECKSUM: f5294cddb8c54ab803ba7d6771cc2b64dccf23b1
+
+COCOAPODS: 1.11.2
